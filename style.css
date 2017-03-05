@@ -1,0 +1,172 @@
+
+ .header { 
+   
+background-image: url(http://volpuri.ru/phh/17/leto_more_oblaka_solnce_chayka_vozdushnyy_shar_1920x1200.jpg); 
+   height: 300px; widht: 100%; }
+
+
+.slogan{
+  color: #ffee00;  
+  font: 13px Georgia;  
+   width: 70%;
+  float: right;
+  margin: 20px 0 0 10px;
+}
+
+.logo{
+  float: left;
+  width: 30px;
+}
+
+.contacts{
+  color: #191970;  
+  font-style: italic; 
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+.login{
+  color: #191970;  
+  font-style: italic; 
+  float:right;
+  width: 30%;
+  padding: 20px;
+  
+}  
+
+.mainmenu {
+  height: 30px;
+  widht: 100%;
+  background: skyblue;  
+  position: relative;
+  z-index: 100;
+}
+
+.mainmenu ul {
+     margin: 0;
+   padding: 0;
+  list-style: none;
+  
+}
+
+.mainmenu nav > ul > li {
+
+  float: left;
+  width: 20%;
+ text-align: center;
+  
+}
+
+.mainmenu nav  ul  li span {
+  border: 1px solid plum;
+  display: block;
+  padding: 5px;
+  
+}
+
+.mainmenu nav ul ul {
+  transition: 1s ease;
+  transform: translateY(-100%)
+    
+}
+
+  
+.mainmenu nav ul li ul {
+  visibility: hidden;  
+ }
+  
+ .mainmenu nav ul li:hover ul {
+  visibility: visible;
+    background: skyblue;  
+   border: 1px solid plum;
+   
+}
+  
+
+.mainmenu nav ul ul {
+  transition: 1s ease;
+  transform: translateY(-100%)
+    
+}
+
+.mainmenu nav li:hover ul {
+  transform: translateY(0);
+  
+}
+
+
+.contacts:hover {
+  color: white;
+  outline: 2px solid lightblue;
+} 
+
+.login:hover {
+  color: white;
+  outline: 2px solid lightblue;
+} 
+
+nav:hover {
+  color: dark blue;
+  outline: 3px solid lightblue;
+  
+
+} 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container > * {
+  float: left;
+  outline: 1px solid green;
+  padding: 10 px;
+  box-sizing: border-box;
+   
+}
+
+
+
+.sidebar-wrapper{
+  width: 25%;
+  height: 10000px;
+  background: Aquamarine;
+ position: absolute;
+  padding-top: 0;
+  
+}
+
+.sidebar {
+  position: absolute;
+  transition: 0.5s ease;
+  right: 150px;
+  background: Aqua;
+  width: 100%;
+  height: 100%;
+
+}
+
+.content {
+position: absolute;
+  top: 330px;
+   margin-left: 25%;
+  background: PaleTurquoise;
+  padding: 5px;
+}
+
+.sidebar-wrapper:hover .sidebar {
+  right: 0;
+}
+
+#footer{
+ background-color: #00BFFF;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+   float:right;
+  
+}
