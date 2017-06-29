@@ -1,0 +1,34 @@
+
+
+<header>
+  <img src = "https://images.trvl-media.com/media/content/expus/graphics/launch/package1320x742.jpg" height = 300px alt = "vacation"; align = "middle"
+       <p> Скорее закажите отпуск своей мечты!
+  </p>
+
+<i><P>Наши контакты г. Киев, ул. Крещатик, 32</P>
+<p>тел. 050-555-55-55</p></i>
+
+
+<!-- сделать окошко-->
+<b><p> Зарегистрируйтесь или войдите:</p></b>
+<p><a href = "gmail.com" >Login </a></p>
+  <p><a href = "gmail.com"> Password </a> </p>
+
+ 
+
+
+
+<ul>
+  <b>Выберите направление:</b>
+  <li>Турция</li>
+  <li>Египет</li>
+  <li>Боливия</li>
+  <li>Уганда</li>
+  <li>Гондурас</li>
+  <li>Шри Ланка</li>
+  <li>ОАЭ
+  <li>Греция</li>
+  
+  </ul>
+  
+  </header>

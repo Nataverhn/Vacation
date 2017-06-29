@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <title> Document</title>
+  <style type="text/css">
+  * {
+  	padding: 0;
+  	margin: 0;
+  	box-sizing: border-box;;
+  }
+
+  ul {
+  	list-style: none;
+
+  }
+
+  .slider {
+  	width: 800px;
+  	height: 400px;
+  	border: 2px solid #333;
+  	border-radius: 20px;
+  	box-shadow: 0 0 30px 0;
+  	margin: 30px auto;
+  	position: relative;
+
+  }
+
+
+  .slider-item {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform:  translate(-50%, -50%);
+  	opacity: 0;
+  	transition: opacity .5s ease;
+  }
+
+  .slider-item.active {
+  	opacity: 1;
+  }
+  </style>
+ 
+
+ <body>
+ 	<p>rext1</p>
+ 	<p>rext2</p> 
+ 	<p>rext3</p>
+ 	<p>rext4</p> 
+ 	<p>rext5</p>
+
+ 	 		 		<div class = 'conteiner'>
+ 	 		 		<ul class = 'slider'>
+ 	 		 		<li class = 'slider-item active'>
+ 	 		 		  	<img src = "C:/Users/Женя/Desktop/FE/vacationsite/hotel1.jpg" alt ="">
+ 	 		 		  	</li>
+
+ 	 		 		  	<li class = 'slider-item'>
+ 	 		 		  	 	<img src = "C:/Users/Женя/Desktop/FE/vacationsite/hotel12.jpg" alt = "">
+
+ 	 		 		<img src ="" alt="">
+
+ 	 		 		<button class = 'scroll-left'> PREV</button>
+
+ 	 		 		<button class = 'scroll-right'>NEXT</button>
+
+ </body>
+ <script src = "C:/Users/Женя/Desktop/FE/jquery-3.2.1.min.js"> </script>
+
+
+
+
+
+ <script>
+
+
+var slider = $ ('.slider'),
+slider_items = slider.find ('.slider-item'),
+showPrexBtn = $('scroll-left'),
+showNextBtn = $('scroll-right')
+
+function onSlide () {
+	var active = slider_items.filter('.active');
+	if (active.next().is('li')) {
+			active.removeClass ('active')
+			.next ()
+			.addClass ('active');
+	} else {
+		slider_items.removeClass ('active');
+		$(slider_items[0]).addClass('active');
+	}
+	
+}
+
+// setInterval(onSlide, 2500);
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <title> Document</title>
+ 
+      </head>
+      <body>
+       <div class ="content"> 
+ 
+    <h2>Concordia Celes Hotel 5*</h2>
+
+
+<script type="text/javascript">
+all_images = new Array (
+"C:/Users/Женя/Desktop/FE/vacationsite/hotel1.jpg",
+"C:/Users/Женя/Desktop/FE/vacationsite/hotel12.jpg",
+"C:/Users/Женя/Desktop/FE/vacationsite/hotel13.jpg");
+
+
+var ImgNum = 0;
+var ImgLength = all_images.length - 1;
+var delay = 2500;
+var lock = false;
+var run;
+
+function chgImg(direction) {
+ if (document.images) {
+  ImgNum = ImgNum + direction;
+  if (ImgNum > ImgLength) { ImgNum = 0; }
+  if (ImgNum < 0) { ImgNum = ImgLength; }
+  document.slide_show.src = all_images[ImgNum];
+ }
+}
+
+function auto() {
+ if (lock == true) {
+  lock = false;
+  window.clearInterval(run);
+ }
+ else if (lock == false) {
+  lock = true;
+  run = setInterval("chgImg(1)", delay);
+ }
+}
+</script>
+
+
+<div align="left">
+ <table border="0">
+  <tr align="center">
+   <td colspan="3"><img src="image/img_1.png" name="slide_show"></td>
+  </tr>
+  <tr>
+   <td align="right"><a href="javascript:chgImg(-1)">Предыдущая</a></td>
+   <td align="center"><a href="javascript:auto()">Старт/Стоп</a></td>
+   <td align="left"><a href="javascript:chgImg(1)">Следующая</a></td>
+  </tr>
+ </table>
+</div>
+
+     <script type="text/javascript">
+ auto();
+</script>
+
+
+    <p> <b>Turkey </b></p>
+    <p> <i>Ближайший тур: 14.02.2017</i></p>
+    <p> <i>Стоимость: 270$</i></p>
+  <p>Длительность тура – 7 ночей/8 дней
+
+Тип питания – всё включено
+
+В стоимость тура входит авиаперелёт, трансфер, проживание, питание (всё включено), медицинская страховка.
+
+Цена тура указана за одного человека при проживании в двухместном номере.
+
+Об отеле:
+
+ОтельConcordia Celes Hotel (ex. Celes Beach Resort) 5*расположен в 35 км от г. Алания, на берегу моря. Отель открыт в 2003 году. Отель состоит из двух соединенных между собой 6-ти этажных корпусов. Туристам предлагаются комфортабельные номера и богатая инфраструктура.
+</p>
+
+
+
+      </body>
+      </html>
+    
+  </style>
+</head>
+<body>
+
+
+
+		
+
+
+ 
+
+
+
+</body>
+</html>
+ <style type="text/css">
+
+  	.content {
+position: absolute;
+  top: 5%;
+   margin-left: 15%;
+   margin-right: 15%;
+  background: PaleTurquoise;
+  padding: 5px;
+}
+  </style>

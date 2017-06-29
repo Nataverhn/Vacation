@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <title> Document</title>
+ 
+      </head>
+      <body>
+       <div class ="content"> 
+
+
+ <h2>Concordia Celes Hotel 5*</h2>
+
+ <div class = 'hotel'>
+    
+    <p> <b>Turkey </b></p>
+    <p> <i>Ближайший тур: 14.02.2017</i></p>
+    <p> <i>Стоимость: 270$</i></p>
+</div>
+
+<script type="text/javascript">
+
+all_images = new Array (
+"C:/Users/Женя/Desktop/FE/vacationsite/hotel1.jpg",
+"C:/Users/Женя/Desktop/FE/vacationsite/hotel12.jpg",
+"C:/Users/Женя/Desktop/FE/vacationsite/hotel13.jpg");
+
+
+var ImgNum = 0;
+var ImgLength = all_images.length - 1;
+var delay = 2500;
+var lock = false;
+var run;
+
+function chgImg(direction) {
+ if (document.images) {
+  ImgNum = ImgNum + direction;
+  if (ImgNum > ImgLength) { ImgNum = 0; }
+  if (ImgNum < 0) { ImgNum = ImgLength; }
+  document.slide_show.src = all_images[ImgNum];
+ }
+}
+
+function auto() {
+ if (lock == true) {
+  lock = false;
+  window.clearInterval(run);
+ }
+ else if (lock == false) {
+  lock = true;
+  run = setInterval("chgImg(1)", delay);
+ }
+}
+</script>
+
+
+<div align="left">
+ <table border="0">
+  <tr align="center">
+   <td colspan="3"><img src="image/img_1.png" name="slide_show"></td>
+  </tr>
+  <tr>
+   <td align="right"><a href="javascript:chgImg(-1)">Предыдущая</a></td>
+   <td align="center"><a href="javascript:auto()">Старт/Стоп</a></td>
+   <td align="left"><a href="javascript:chgImg(1)">Следующая</a></td>
+  </tr>
+ </table>
+</div>
+
+     <script type="text/javascript">
+ auto();
+</script>
+
+
+    
+  <p>Длительность тура – 7 ночей/8 дней
+
+Тип питания – всё включено
+
+В стоимость тура входит авиаперелёт, трансфер, проживание, питание (всё включено), медицинская страховка.
+
+Цена тура указана за одного человека при проживании в двухместном номере.
+
+Об отеле:
+
+ОтельConcordia Celes Hotel (ex. Celes Beach Resort) 5*расположен в 35 км от г. Алания, на берегу моря. Отель открыт в 2003 году. Отель состоит из двух соединенных между собой 6-ти этажных корпусов. Туристам предлагаются комфортабельные номера и богатая инфраструктура.
+</p>
+
+<h2>WOW Kremlin Palace 5</h2>
+
+<div class = 'hotel2'>
+<p> <b>Turkey </b></p>
+    <p> <i>Ближайший тур: 14.02.2017</i></p>
+    <p> <i>Стоимость: 310$</i></p>
+    </div>
+  
+     
+
+
+  <p>Длительность тура – 7 ночей/8 дней
+
+Тип питания – всё включено
+
+В стоимость тура входит авиаперелёт, трансфер, проживание, питание (всё включено), медицинская страховка.
+
+Цена тура указана за одного человека при проживании в двухместном номере.
+
+Об отеле:
+
+Отель WOW Kremlin Palace – величественный и роскошный символ богатой русской культуры, дух которого покорил и Средиземноморье.
+Посетив отель Kremlin Palace лишь раз, равнодушным остаться просто невозможно – дворец словно сошел с Красной площади и нашел свое место под ласковым солнцем Анталии. Провести свой отдых в таком отеле – это сказка, ставшая явью!
+
+
+</p>
+  </article>
+
+  <article>
+  <h2>Harmony Makadi Bay Hotel 5*</h2>
+     <img src = "http://gorizont.in.ua/img/tours/1/small/1279/296861864.jpg"; align = "middle"
+    <p> <b>Egypt </b></p>
+    <p> <i>Ближайший тур: 14.02.2017</i></p>
+    <p> <i>Стоимость: 305$</i></p>
+  <p>Длительность тура – 7 ночей/8 дней
+
+Тип питания – всё включено
+
+В стоимость тура входит авиаперелёт, трансфер, проживание, питание (всё включено), медицинская страховка.
+
+Цена тура указана за одного человека при проживании в двухместном номере.
+
+Об отеле:
+
+Domina Makadi Bay – роскошный отельный комплекс, который отлично подойдет для любителей насыщенного активного отдыха и водных видов спорта. Отель окружен чудесным садом и занимает площадь в 85 000 кв.м.
+</p>
+  </article>
+
+      </body>
+      </html>
+    
+  </style>
+</head>
+<body>
+
+
+
+		
+
+
+ 
+
+
+
+</body>
+</html>
+ <style type="text/css">
+
+  	.content {
+position: absolute;
+  top: 5%;
+   margin-left: 15%;
+   margin-right: 15%;
+  background: PaleTurquoise;
+  padding: 5px;
+}
+
+.hotel{
+  position: absolute;
+  margin-left: 35%;
+
+}
+  </style>}
+
+<script type="text/javascript">
+all_images = new Array ("vacationsite/hotel2.jpg","vacationsite/hotel21.jpg","vacationsite/hote23.jpg",);
+all_images_2 = new Array ("vacationsite/hotel3.jpg","vacationsite/hotel31.jpg","vacationsite/hote32.jpg",);
+
+
+
+var ImgNum = new Array (0,0,0);
+
+function chgImg(whois,mass,num) {
+  ImgNum[num]++;
+  if (ImgNum[num] > mass.length - 1) { ImgNum[num] = 0; }
+  document.getElementById(whois).src = mass[ImgNum[num]];
+}
+</script>
+
+<div align="center">
+<img src="C:/Users/Женя/Desktop/FE/vacationsite/hotel2.jpg" id="slide_show">
+<img src="C:/Users/Женя/Desktop/FE/vacationsite/hotel21.jpg" id="slide_show_2">
+<img src="C:/Users/Женя/Desktop/FE/vacationsite/hote23.jpg" id="slide_show_3">
+</div>
+
+<script type="text/javascript">
+run = setInterval("chgImg('slide_show',all_images,0)", 1000);
+run_2 = setInterval("chgImg('slide_show_2',all_images_2,1)", 2000);
+run_3 = setInterval("chgImg('slide_show_3',all_images_3,2)", 3000);
+</script>
